@@ -9,11 +9,13 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
 ```
 
 # Read Survey1
 ```{r}
-readxl::read_excel("~/shared/survey1.xlsx")
+survey1 <- readxl::read_excel("~/shared/survey1.xlsx")
+kable(survey1)
 ```
 
 
